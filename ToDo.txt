@@ -1,0 +1,5 @@
+* Improve the draw_lines function
+DONE Put some color filtering.
+- Fix some of the parameters of the pipeline in order to improve the results: MAKE THE YELLOW LINE LARGER.
+- Put some code in order to produce output for the different intermediate images.
+- Write up the final report including the images.
