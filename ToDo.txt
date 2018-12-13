@@ -1,6 +1,9 @@
 DONE Improve the draw_lines function
 DONE Put some color filtering.
-- Fix some of the parameters of the pipeline in order to improve the results: 
-- Put some code in order to produce output for the different intermediate images.
-- Write up the final report including the images.
-- Realitzar preguntes per entendre mes com tunejar els parametres-
+DONE Fix the problem of the video streaming and put the solution on top of that.
+- Check how to set the parameters of the pipeline and prepare some questions in order how to improve the results.
+- Send questions to the group.
+- Final tuning of the parameters.
+- Write up the final report including the images. 
+- Submit the assignment.
+
