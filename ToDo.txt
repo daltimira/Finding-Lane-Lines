@@ -1,8 +1,14 @@
 DONE Improve the draw_lines function
 DONE Put some color filtering.
 DONE Fix the problem of the video streaming and put the solution on top of that.
-- Check how to set the parameters of the pipeline and prepare some questions in order how to improve the results.
-- Send questions to the group.
+DONE Check how to set the parameters of the pipeline.
+
+DONE Prepare some questions in order how to improve the results. Got all good with single images, and with videos, good, but some jumps.
+DONE Possible rgb? or other tunning parameters. Explain how parameters were tunned.
+DONE Report the problem of suddenly jumpy line. 
+DONE Send questions to the group.
+DONE Commit and push latest changes before going home. 
+
 - Final tuning of the parameters.
 - Write up the final report including the images. 
 - Submit the assignment.
