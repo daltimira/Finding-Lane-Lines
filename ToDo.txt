@@ -2,14 +2,15 @@ DONE Improve the draw_lines function
 DONE Put some color filtering.
 DONE Fix the problem of the video streaming and put the solution on top of that.
 DONE Check how to set the parameters of the pipeline.
-
 DONE Prepare some questions in order how to improve the results. Got all good with single images, and with videos, good, but some jumps.
 DONE Possible rgb? or other tunning parameters. Explain how parameters were tunned.
 DONE Report the problem of suddenly jumpy line. 
 DONE Send questions to the group.
 DONE Commit and push latest changes before going home. 
+* Final tuning of the parameters and implement averaging of frames.
 
-- Final tuning of the parameters.
+You can smooth the lane lines which can reduce jittering in the videos by averaging the last several images’ lanes together. You can collect the past 5 or 10 images information and take average of them to be used for plotting the lane lines. The result would be that the lane marker changes the position slowly during the video. You can use python's deque() container module to collect the past number of images information. Check out this tutorial https://pythontips.com/2014/07/02/an-intro-to-deque-module/
+
 - Write up the final report including the images. 
-- Submit the assignment.
+- Submit the assignment. 
 
