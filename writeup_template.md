@@ -35,7 +35,9 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 
 5. From the edges under the region, I apply the hough transform to obtain the lines.
 
-6. I process the obtained lines of the hough transform in order to obtain two coordinates (start and end positions) for the right line, and another two coordinates for the left line. The process consist in: (a) classify the lines as right line or left line (based on the sign of the slope), (2) calculate the coefficients of the polynomial of the form y = am + c for both left lines and right lines, (3) as we know the y coordinates of the lines (based on the regtion of interest), I obtain the corresponding x coordinates for the start and end positions of the right and left lines.
+6. I process the obtained lines of the hough transform in order to obtain two coordinates (start and end positions) for the right line, and another two coordinates for the left line. The process consist in: (a) classify the lines as right line or left line (based on the sign and the value of the slope*), (2) calculate the coefficients of the polynomial of the form y = am + c for both left lines and right lines, (3) as we know the y coordinates of the lines (based on the regtion of interest), I obtain the corresponding x coordinates for the start and end positions of the right and left lines.
+
+* Initially I only took into account the sign of the slope (>0 or <0), but this criteria seems to introduce some artificats in the video stream (some jumps on the coordinates of the start and end point of the line). I decided then to discard lines with slope close to zero and this plus some smoothing (averaging of the last samples) solved the sudden jumps of the coordinates.
 
 e.g. 
 The 'y' coordinate are fix:
